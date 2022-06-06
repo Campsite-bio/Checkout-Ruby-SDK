@@ -7,7 +7,7 @@ require 'cgi'
 module PayPalCheckoutSdk
   module Identity
     #
-    # Creates a partner referral request.
+    # Generates a token
     #
     class GenerateTokenRequest
 
@@ -19,10 +19,6 @@ module PayPalCheckoutSdk
         @verb = 'POST'
         @path = '/v1/identity/generate-token?'
         @headers['Content-Type'] = 'application/json'
-      end
-
-      def pay_pal_partner_attribution_id(pay_pal_partner_attribution_id)
-        @headers['PayPal-Partner-Attribution-Id'] = pay_pal_partner_attribution_id
       end
 
       def prefer(prefer)
