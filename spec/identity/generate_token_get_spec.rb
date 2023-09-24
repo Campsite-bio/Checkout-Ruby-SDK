@@ -6,7 +6,7 @@ require 'json'
 
 include PayPalCheckoutSdk::Identity
 
-describe GenerateTokenGetRequest do
+describe GenerateTokenRequest do
 
   it 'successfully makes a request' do
     request = GenerateTokenRequest.new()
